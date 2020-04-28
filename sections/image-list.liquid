@@ -1,0 +1,104 @@
+{% if section.blocks.size > 0 %}
+	<style type="text/css">
+		@media(min-width: 768px) {
+			{% assign imagesPerRow = section.settings.images_per_row_desk | times: 1 %}
+				.image-list-section	.image-list {
+					grid-template-columns: repeat({{ imagesPerRow }},{{ imagesPerRow }}fr);
+				}
+			}
+		}
+	</style>
+
+	<div class="image-list-section">
+		<div class="{% unless section.settings.full_width %}wrapper{% endunless %}">
+			<div class="section-header text-center">
+				{% unless section.settings.title == blank %}
+	        		<h2 class="h1 section-header__title balnes-font font-134">{{ section.settings.title }}</h2>
+				{% endunless %}
+	      	</div>
+	      	<ul class="image-list">
+	      		{% for block in section.blocks %}
+		      		<li>
+		      			<a href="{{ block.settings.image_link | default: 'javascript:void(0)' }}">
+		      				<img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" />
+		      			</a>
+		      		</li>
+	      		{% endfor %}
+	      	</ul>
+	      	{% if section.settings.view_more_text != blank and section.settings.view_more_link != blank %}
+	      	<div class="text-right view_more_insta"><a href="{{ section.settings.view_more_link }}">{{ section.settings.view_more_text }}</a></div>
+	      	{% endif %}
+		</div>
+	</div>
+{% endif %}
+
+{% schema %}
+	{
+		"name":"Image List",
+		"settings": [
+			{
+				"type":"checkbox",
+				"id":"full_width",
+				"label":"Full width",
+				"default":false
+			},
+			{
+				"type":"text",
+				"id":"title",
+				"label":"Title",
+				"default":"Instagram"
+			},
+			{
+				"type":"text",
+				"id":"view_more_text",
+				"label":"View more link text",
+				"default":"View More"
+			},
+			{
+				"type":"url",
+				"id":"view_more_link",
+				"label":"View more link"
+			},
+			{
+				"type": "select",
+				"id": "images_per_row_desk",
+				"options": [
+					{ "value": "2", "label": "2"},
+					{ "value": "3", "label": "3"},
+					{ "value": "4", "label": "4"}
+				],
+				"label": "Images per row",
+				"default":"4"
+			}
+		],
+		"presets": [
+			{
+				"name":"Image List",
+				"category":"Image",
+				"blocks":[
+					{
+						"type": "image"
+					}
+				]
+			}
+		],
+		"blocks": [
+			{
+				"type": "image",
+				"name": "Image",
+				"settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image"
+					},
+					{
+						"type": "url",
+						"id": "image_link",
+						"label": "Image Link"
+					}
+				]
+			}
+		]
+	}
+{% endschema %}

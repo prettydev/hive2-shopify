@@ -1,0 +1,101 @@
+<ul class="no-bullets social-icons">
+	{% if settings.social_facebook_link != blank %}
+	<li>
+		<a href="{{ settings.social_facebook_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Facebook' }}">
+			{% if facebook_custom %}
+			<i class="fab fa-facebook"></i>
+			{% else %}
+			<span class="icon icon-facebook" aria-hidden="true"></span>
+			{% endif %}
+		</a>
+	</li>
+	{% endif %}
+	{% if settings.social_twitter_link != blank %}
+	<li>
+		<a href="{{ settings.social_twitter_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Twitter' }}">
+			<span class="icon icon-twitter" aria-hidden="true"></span>
+		</a>
+	</li>
+	{% endif %}
+	{% if settings.social_instagram_link != blank %}
+	<li>
+		<a href="{{ settings.social_instagram_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Instagram' }}">
+			<span class="icon icon-instagram" aria-hidden="true"></span>
+		</a>
+	</li>
+	{% endif %}
+	{% if settings.social_youtube_link != blank %}
+	<li>
+		<a href="{{ settings.social_youtube_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'YouTube' }}">
+			<img src="{{ 'youtub_icon.svg'| asset_url }}"/>
+		</a>
+	</li>
+	{% endif %}
+	{% if settings.social_linkedin_link != blank %}
+	<li style="display:none">
+		<a href="{{ settings.social_linkedin_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Linkedin' }}">
+			{% if youtube_custom %}
+			<i class="fab fa-linkedin-in"></i>
+			{% else %}
+			<span class="icon icon-youtube" aria-hidden="true"></span>
+			{% endif %}
+		</a>
+	</li>
+	{% endif %}
+	{% if settings.social_snapchat_link != blank %}
+	<li>
+		<a href="{{ settings.social_snapchat_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Snapchat' }}">
+			<span class="icon icon-snapchat" aria-hidden="true"></span>
+		</a>
+	</li>
+	{% endif %}
+	{% if settings.social_google_plus_link != blank %}
+	<li>
+		<a href="{{ settings.social_google_plus_link | escape }}" rel="publisher" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Google Plus' }}">
+			<span class="icon icon-google_plus" aria-hidden="true"></span>
+		</a>
+	</li>
+	{% endif %}
+	{% if settings.social_tumblr_link != blank %}
+	<li>
+		<a href="{{ settings.social_tumblr_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Tumblr' }}">
+			<span class="icon icon-tumblr" aria-hidden="true"></span>
+		</a>
+	</li>
+	{% endif %}
+	{% if settings.social_vimeo_link != blank %}
+	<li>
+		<a href="{{ settings.social_vimeo_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Vimeo' }}">
+			<span class="icon icon-vimeo" aria-hidden="true"></span>
+		</a>
+	</li>
+	{% endif %}
+	{% if settings.social_fancy_link != blank %}
+	<li>
+		<a href="{{ settings.social_fancy_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Fancy' }}">
+			<span class="icon icon-fancy" aria-hidden="true"></span>
+		</a>
+	</li>
+	{% endif %}
+    {% if settings.social_linkedin_link != blank %}
+    <li>
+      <a href="{{ settings.social_linkedin_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Linkedin' }}">
+        <span class="icon icon-tiktok" aria-hidden="true"><img src="{{ 'linkedin.svg'| asset_url }}"/></span>
+      </a>
+    </li>
+    {% endif %}
+  	{% if settings.social_tiktok_link != blank %}
+	<li>
+		<a href="{{ settings.social_tiktok_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Tiktok' }}">
+			<span class="icon icon-tiktok" aria-hidden="true"><img src="{{ 'tiktok.svg'| asset_url }}"/></span>
+		</a>
+	</li>
+	{% endif %}
+    {% if settings.social_pinterest_link != blank %}
+    <li>
+      <a href="{{ settings.social_pinterest_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Pinterest' }}">
+        <img src="{{ 'pinterest_icon.svg'| asset_url }}"/>
+      </a>
+    </li>
+    {% endif %}
+</ul>

@@ -1,0 +1,58 @@
+<div id="business_tools">
+   <div class="tools_wrapper">
+    <div class="tool_form_wrap">
+
+      {% form 'customer' %}
+      {{ form.errors | default_errors }}
+      {% if form.posted_successfully? %}
+      <div class="newsletter--form">
+        <div class="note form-success">{{ 'general.newsletter_form.newsletter_confirmation' | t }}</div>
+      </div>
+      {% else %}
+      <label for="Email" class="newsletter__label hidden-label">{{ 'general.newsletter_form.newsletter_email' | t }}</label>
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <div class="newsletter--form">
+        <div class="wrapper">
+          <div class="input-group">
+            {% unless section.settings.label_text == blank %}
+            <span class="form_text">{{- section.settings.label_text -}}</span>
+            {% endunless %}
+            <input type="text" value="{% if customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'general.newsletter_form.newsletter_name_placeholder' | t }}" name="contact[name]" id="Name" class="btn input-group-field newsletter__input input_name" autocorrect="off" autocapitalize="off" required>
+            <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter_form.newsletter_placeholder' | t }}" name="contact[email]" id="Email" class="btn input-group-field newsletter__input input_email" autocorrect="off" autocapitalize="off" required>
+            <span class="input-group-btn">
+              <button id="Subscribe" type="submit"
+                      class="btn newsletter__submit"
+                      aria-label="{{ 'general.newsletter_form.submit' | t }}">
+                <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+                <span class="newsletter__submit-text--small">
+                  <span class="icon icon-arrow-right" aria-hidden="true"></span>
+                </span>
+              </button>
+            </span>
+          </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endform %}
+  </div>
+</div>
+</div>
+
+{% schema %}
+{
+  "name": "Business tools newsletter",
+  "settings": [
+  {
+    "type": "text",
+    "id": "label_text",
+    "label": "Newsletter label text"
+  }
+  ],
+  "presets": [
+  {
+    "name": "Business tool form",
+    "category": "Promotional"
+  }
+  ]
+}
+{% endschema %}
