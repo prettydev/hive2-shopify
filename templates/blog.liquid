@@ -32,7 +32,7 @@
               <noscript>
                 {{ article.image | img_url: '2048x2048' | img_tag: article.title | escape }}
               </noscript>
-              <div class="article__featured-image-wrapper" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;">
+              <div class="article__featured-image-wrapper" style="padding-top:50%;">
                 {% assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
                 <img class="article__featured-image lazyload"
                   src="{{ article.image | img_url: '300x300' }}"
