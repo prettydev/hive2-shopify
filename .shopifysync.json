@@ -1,0 +1,14 @@
+{
+  "dir": "assets",
+  "targets": [
+    {
+      "target_name": "hive2work",
+      "api_key": "092fbadf10d7ab4617010a62e1f217c0",
+      "password": "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",
+      "domain": "hive2",
+      "primary_domain": "https://hive2.myshopify.com",
+      "theme_name": "Theme-20200428",
+      "theme_id": 79844573254
+    }
+  ]
+}

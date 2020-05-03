@@ -239,56 +239,14 @@
           "show_view_all": false
         }
       },
-      "1587908025273": {
-        "type": "image-list",
-        "blocks": {
-          "1587908025273-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/image_4.png",
-              "image_link": ""
-            }
-          },
-          "1587908052035": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/Placeholder_2.png",
-              "image_link": ""
-            }
-          },
-          "1587908061235": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/top-left.png",
-              "image_link": ""
-            }
-          },
-          "1587908075371": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/image_4.png",
-              "image_link": ""
-            }
-          }
-        },
-        "block_order": [
-          "1587908025273-0",
-          "1587908052035",
-          "1587908061235",
-          "1587908075371"
-        ],
+      "1587926962408": {
+        "type": "instafeed",
         "settings": {
           "full_width": false,
           "title": "Instagram",
           "view_more_text": "View More",
           "view_more_link": "shopify://products/face-mask",
-          "images_per_row_desk": "4"
-        }
-      },
-      "1587926962408": {
-        "type": "instafeed",
-        "settings": {
-          "heading_font": "helvetica_n4",
+          "heading_font": "Balnes",
           "heading_size": 20,
           "feed_width": 100,
           "html_area": "<!-- -->"
@@ -305,7 +263,6 @@
       "featured-collections",
       "featured-product",
       "newsletter",
-      "1587908025273",
       "1587926962408"
     ]
   },
@@ -449,7 +406,7 @@
       "checkout_input_background_color_mode": "white",
       "checkout_sidebar_background_image": "",
       "checkout_sidebar_background_color": "#fff4f6",
-      "checkout_heading_font": "Helvetica Neue",
+      "checkout_heading_font": "Balnes",
       "checkout_body_font": "Roboto",
       "checkout_accent_color": "#7737BD",
       "checkout_button_color": "#7737BD",
