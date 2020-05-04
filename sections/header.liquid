@@ -100,6 +100,7 @@
             <div class="header-top--right">
               {% render 'social-icons' ,facebook_custom:true, youtube_custom:true %}
               <ul class="header-top-nav-icons">
+                  <li class="vbar"></li>
                   <li class="site-nav__item site-nav__item--compressed item-cart">
                     <a href="{{ routes.cart_url }}" class="site-nav__link site-nav__link--icon cart-link js-drawer-open-button-right cart_icon_wrap" aria-controls="CartDrawer">
                       <span class="icon-box"><i class="fal fa-shopping-bag"></i></span>
@@ -109,8 +110,12 @@
                       {% comment %}<span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>{% endcomment %}
                     </a>
                   </li>
-                  <li class="item-wishlist"><a href="#"><span class="icon-box"><i class="fal fa-heart"></i></span></a></li>
+                  <li class="vbar"></li>
+                  <li class="item-wishlist">
+                    <a href="#"><span class="icon-box"><i class="fal fa-heart"></i></span></a>
+                  </li>
                   {% if shop.customer_accounts_enabled %}
+                  <li class="vbar"></li>
                     <li class="site-nav__item site-nav__expanded-item site-nav__item--compressed item-account">
                       <a class="site-nav__link site-nav__link--icon" href="{{ routes.account_url }}">
                         <span class="icon-fallback-text">
