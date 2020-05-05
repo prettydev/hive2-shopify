@@ -2697,9 +2697,15 @@ $socialIconFontStack: 'icons';
   a {
     display: inline !important;
     padding: 7px !important;
-    img.social-icon {
-      width:20px;
-    } 
+    img{
+      &.social-icon {
+        height:20px;
+        margin-bottom: -1px;
+      } 
+      {% comment %} &.youtub-icon {
+        width: 28px !important;
+      } {% endcomment %}
+    }
     span {
       font-size: 20px;
     }
