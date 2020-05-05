@@ -118,9 +118,9 @@
           </li>          
         {% endif %}
       {% endif %}
-      {% for link in linklists[section.settings.drawer_bottom_link_list].links %}
+      {% comment %} {% for link in linklists[section.settings.drawer_bottom_link_list].links %}
         <li class="mobile-nav__item mobile-nav__item--secondary"><a href="{{ link.url }}">{{ link.title }}</a></li>        
-      {% endfor %}
+      {% endfor %} {% endcomment %}
       <li class="mobile-nav__item mobile-nav__item--secondary mobile-social-icon">
         {% if settings.social_facebook_link != blank %}        
             <a href="{{ settings.social_facebook_link | escape }}">
@@ -131,15 +131,35 @@
               {% endif %}
             </a>        
         {% endif %}
+        {% if settings.social_twitter_link != blank %}	
+          <a href="{{ settings.social_twitter_link | escape }}">
+            <span class="icon icon-twitter" aria-hidden="true"></span>
+          </a>        
+        {% endif %}
         {% if settings.social_instagram_link != blank %}
             <a href="{{ settings.social_instagram_link | escape }}">
               <span class="icon icon-instagram" aria-hidden="true"></span>
             </a>        
         {% endif %}
+        {% if settings.social_youtube_link != blank %}
+          <a href="{{ settings.social_youtube_link | escape }}" >
+            <img class="social-icon" src="{{ 'youtub_icon.svg'| asset_url }}"/>
+          </a>
+        {% endif %} 
+        {% if settings.social_linkedin_link != blank %}        
+          <a href="{{ settings.social_linkedin_link | escape }}" >
+            <img class="social-icon" src="{{ 'linkedin.svg'| asset_url }}"/>
+          </a>    
+        {% endif %}
+        {% if settings.social_tiktok_link != blank %}
+          <a href="{{ settings.social_tiktok_link | escape }}">
+            <img class="social-icon" src="{{ 'tiktok.svg'| asset_url }}"/>
+          </a>
+        {% endif %}
         {% if settings.social_pinterest_link != blank %}
-            <a href="{{ settings.social_pinterest_link | escape }}">
-              <img style="width: 20px;" src="{{ 'pinterest_icon.svg'| asset_url }}"/>
-            </a>        
+          <a href="{{ settings.social_pinterest_link | escape }}">
+            <img class="social-icon" src="{{ 'pinterest_icon.svg'| asset_url }}"/>
+          </a>        
         {% endif %}
       </li>
     </ul>
