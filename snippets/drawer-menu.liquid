@@ -121,31 +121,27 @@
       {% for link in linklists[section.settings.drawer_bottom_link_list].links %}
         <li class="mobile-nav__item mobile-nav__item--secondary"><a href="{{ link.url }}">{{ link.title }}</a></li>        
       {% endfor %}
-      {% if settings.social_facebook_link != blank %}
-        <li class="mobile-nav__item mobile-nav__item--secondary">
-          <a href="{{ settings.social_facebook_link | escape }}">
-            {% if facebook_custom %}
-            <i class="fab fa-facebook"></i>
-            {% else %}
-            <span class="icon icon-facebook" aria-hidden="true"></span>
-            {% endif %}
-          </a>
-        </li>
-      {% endif %}
-      {% if settings.social_instagram_link != blank %}
-        <li class="mobile-nav__item mobile-nav__item--secondary">
-          <a href="{{ settings.social_instagram_link | escape }}">
-            <span class="icon icon-instagram" aria-hidden="true"></span>
-          </a>
-        </li>
-      {% endif %}
-      {% if settings.social_pinterest_link != blank %}
-        <li class="mobile-nav__item mobile-nav__item--secondary">
-          <a href="{{ settings.social_pinterest_link | escape }}">
-            <img style="width: 20px;" src="{{ 'pinterest_icon.svg'| asset_url }}"/>
-          </a>
-        </li>
-      {% endif %}
+      <li class="mobile-nav__item mobile-nav__item--secondary mobile-social-icon">
+        {% if settings.social_facebook_link != blank %}        
+            <a href="{{ settings.social_facebook_link | escape }}">
+              {% if facebook_custom %}
+              <i class="fab fa-facebook"></i>
+              {% else %}
+              <span class="icon icon-facebook" aria-hidden="true"></span>
+              {% endif %}
+            </a>        
+        {% endif %}
+        {% if settings.social_instagram_link != blank %}
+            <a href="{{ settings.social_instagram_link | escape }}">
+              <span class="icon icon-instagram" aria-hidden="true"></span>
+            </a>        
+        {% endif %}
+        {% if settings.social_pinterest_link != blank %}
+            <a href="{{ settings.social_pinterest_link | escape }}">
+              <img style="width: 20px;" src="{{ 'pinterest_icon.svg'| asset_url }}"/>
+            </a>        
+        {% endif %}
+      </li>
     </ul>
     <!-- //mobile-nav -->
   </div>
