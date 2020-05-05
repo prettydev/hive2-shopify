@@ -5601,6 +5601,36 @@ html {
 
 // HP code end
 
-.instafeed-new{ background:#D1ACA5; padding-bottom: 70px; background-image: url(https://cdn.shopify.com/s/files/1/0274/1524/8966/files/Instagram.png?v=1588567106); background-position:right top; background-repeat: no-repeat; background-size: contain; }
+#insta-feed{ width:100% !important; background:#D1ACA5; padding:0 15px 70px 15px; background-image: url(https://cdn.shopify.com/s/files/1/0274/1524/8966/files/Instagram.png?v=1588567106); background-position:right top; background-repeat: no-repeat; background-size: contain; }
 #insta-feed{ margin-top:4px !important;}
 #insta-feed h2{ font-size: 100px !important; line-height: 100px; color: #fff; font-family: "Balnes" !important; padding: 20px 0 20px 0; } 
+
+
+
+@media(min-width:0px) and (max-width:590px){
+  #featured_content .feature-row .feature-row__item.about_us_image{ width: 220px; margin: auto; max-width: 220px; }
+  .featured-blog__post .article__featured-image-wrapper { padding-top: 0% !important; }
+  .featured-blog__post .article__featured-image-wrapper .article__featured-image{ position:relative; }
+  .featured-blog__post .blog-info-wrapper{ padding:25px 15px 15px 15px !important; }
+  
+  #insta-feed .instafeed-container{ width:100% !important; padding-top: 100% !important;}
+}
+
+@media(min-width:591px) and (max-width:768px){
+  #featured_content .feature-row .feature-row__item.about_us_image{ width: 300px; margin: auto; max-width: 300px; }
+  .featured-blog__post .article__featured-image-wrapper { padding-top: 0% !important; }
+  .featured-blog__post .article__featured-image-wrapper .article__featured-image{ position:relative; }
+  .featured-blog__post .blog-info-wrapper{ padding:25px 15px 15px 15px !important; }
+  #insta-feed .instafeed-container{ width:50% !important; padding-top: 50% !important;}
+}
+
+@media(min-width:769px) and (max-width:1023px){
+  .featured-blog__post .article__featured-image-wrapper { padding-top: 0% !important; }
+  .featured-blog__post .article__featured-image-wrapper .article__featured-image{ position:relative; }
+  .featured-blog__post .blog-info-wrapper{ padding:25px 15px 15px 15px !important; }
+}
+
+@media(min-width:1024px) and (max-width:1800px){
+  .featured-blog__post .article__featured-image-wrapper { padding-top: 0% !important; }
+  .featured-blog__post .article__featured-image-wrapper .article__featured-image{ position:relative; }
+}
