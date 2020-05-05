@@ -12,7 +12,7 @@
     "color_sale_tag": "#a56600",
     "color_input": "#f6f6f6",
     "color_newsletter": "#f6f6f6",
-    "color_drawer_background": "#1f2021",
+    "color_drawer_background": "#D7C4B3",
     "color_drawer_text": "#ffffff",
     "color_drawer_border": "#1f2021",
     "color_drawer_button": "#d1aca5",
@@ -30,18 +30,18 @@
     "cart_type": "page",
     "cart_notes_enable": false,
     "share_image": "",
-    "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
-    "social_twitter_link": "https:\/\/twitter.com\/shopify",
-    "social_pinterest_link": "https:\/\/www.pinterest.com\/shopify",
-    "social_instagram_link": "https:\/\/instagram.com\/shopify",
+    "social_facebook_link": "https://www.facebook.com/shopify",
+    "social_twitter_link": "https://twitter.com/shopify",
+    "social_pinterest_link": "https://www.pinterest.com/shopify",
+    "social_instagram_link": "https://instagram.com/shopify",
     "social_snapchat_link": "",
     "social_google_plus_link": "",
     "social_tumblr_link": "",
-    "social_youtube_link": "https:\/\/www.youtube.com\/user\/shopify",
+    "social_youtube_link": "https://www.youtube.com/user/shopify",
     "social_vimeo_link": "",
     "social_fancy_link": "",
-    "social_tiktok_link": "https:\/\/tiktok.com\/shopify",
-    "social_linkedin_link": "https:\/\/linkedin.com\/shopify",
+    "social_tiktok_link": "https://tiktok.com/shopify",
+    "social_linkedin_link": "https://linkedin.com/shopify",
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
@@ -64,11 +64,11 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/logos-04.png",
+          "logo": "shopify://shop_images/logos-04.png",
           "logo_max_width": 200,
           "header_color": "#000000",
           "transparent_header_enable": true,
-          "transparent_logo": "shopify:\/\/shop_images\/logos-04.png",
+          "transparent_logo": "shopify://shop_images/logos-04.png",
           "transparent_header_color": "#111111",
           "search": "page",
           "main_menu_link_list": "main-menu",
@@ -88,7 +88,7 @@
           "slideshow-0": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Banner_Image.png",
+              "image": "shopify://shop_images/Banner_Image.png",
               "image_position": "center center",
               "image_overlay": true,
               "image_overlay_opacity": 0,
@@ -103,9 +103,7 @@
             }
           }
         },
-        "block_order": [
-          "slideshow-0"
-        ],
+        "block_order": ["slideshow-0"],
         "settings": {
           "home_hero_height": "adapt",
           "hero_home_auto": false,
@@ -115,10 +113,10 @@
       "featured-content": {
         "type": "featured-content",
         "settings": {
-          "image": "shopify:\/\/shop_images\/top-left.png",
+          "image": "shopify://shop_images/top-left.png",
           "layout": "left",
           "title": "Hello",
-          "text": "<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.<\/p>",
+          "text": "<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>",
           "button_label": "About us",
           "button_link": "#"
         }
@@ -195,7 +193,7 @@
         "disabled": true,
         "settings": {
           "heading": "Subscribe to our newsletter",
-          "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>"
+          "subheading": "<p>Promotions, new products and sales. Directly to your inbox.</p>"
         }
       },
       "footer": {
@@ -213,10 +211,10 @@
       "1587815858437": {
         "type": "featured-row",
         "settings": {
-          "image": "shopify:\/\/shop_images\/image_4.png",
+          "image": "shopify://shop_images/image_4.png",
           "layout": "left",
           "title": "Our Values",
-          "text": "<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.<\/p>",
+          "text": "<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>",
           "button_label": "",
           "button_link": ""
         }
@@ -288,10 +286,7 @@
               "settings": {}
             }
           },
-          "block_order": [
-            "slideshow-0",
-            "slideshow-1"
-          ],
+          "block_order": ["slideshow-0", "slideshow-1"],
           "settings": {}
         },
         "featured-content": {
@@ -433,9 +428,7 @@
               }
             }
           },
-          "block_order": [
-            "1495823280244"
-          ],
+          "block_order": ["1495823280244"],
           "settings": {
             "hero_home_auto": false,
             "home_hero_auto_speed": 5
@@ -504,15 +497,13 @@
             "1496078102297-0": {
               "type": "html",
               "settings": {
-                "code": "<div style=\"text-align:center;\">\n<h1 class=\"h1\">Use HTML to format your text so it can be easily read.<\/h1>This text can be used to share information about your brand with customers.<\/div>",
+                "code": "<div style=\"text-align:center;\">\n<h1 class=\"h1\">Use HTML to format your text so it can be easily read.</h1>This text can be used to share information about your brand with customers.</div>",
                 "width": "100%",
                 "alignment": "top-middle"
               }
             }
           },
-          "block_order": [
-            "1496078102297-0"
-          ],
+          "block_order": ["1496078102297-0"],
           "settings": {}
         },
         "1496177901425": {
@@ -521,15 +512,13 @@
             "1496177901425-0": {
               "type": "html",
               "settings": {
-                "code": "<div style=\"width:745px;text-align: center; margin: 0 auto;\">This text can be used to share information about your brand with customers.<\/div>",
+                "code": "<div style=\"width:745px;text-align: center; margin: 0 auto;\">This text can be used to share information about your brand with customers.</div>",
                 "width": "100%",
                 "alignment": "top-middle"
               }
             }
           },
-          "block_order": [
-            "1496177901425-0"
-          ],
+          "block_order": ["1496177901425-0"],
           "settings": {}
         }
       },
