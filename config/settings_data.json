@@ -88,7 +88,7 @@
           "slideshow-0": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Banner_Image.png",
+              "image": "shopify:\/\/shop_images\/Untitled-1.png",
               "image_position": "center center",
               "image_overlay": true,
               "image_overlay_opacity": 0,
@@ -115,7 +115,7 @@
       "featured-content": {
         "type": "featured-content",
         "settings": {
-          "image": "shopify:\/\/shop_images\/about3.png",
+          "image": "shopify:\/\/shop_images\/picture2_1.png",
           "layout": "left",
           "title": "Hello",
           "text": "<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.<\/p>",
@@ -213,7 +213,7 @@
       "1587815858437": {
         "type": "featured-row",
         "settings": {
-          "image": "shopify:\/\/shop_images\/image_4.png",
+          "image": "shopify:\/\/shop_images\/image-3_1_4.png",
           "layout": "left",
           "title": "Our Values",
           "text": "<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.<\/p>",

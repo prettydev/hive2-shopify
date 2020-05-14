@@ -1961,7 +1961,7 @@ $shareCountBg: $colorBody;
   left: 0;
 
   .hero & {
-    background-color: transparent;
+    background-color: transparent;    
   }
 
   .placeholder-svg {
@@ -1972,7 +1972,7 @@ $shareCountBg: $colorBody;
 
 .hero__slide {
   &.slide--placeholder {
-    background-color: $color-blankstate-background !important;
+    background-color: $color-blankstate-background !important;        
   }
 }
 
@@ -2161,7 +2161,7 @@ $slideshow-indicator-size: 1.25rem;
 
   img {
     display: block;
-    width: 100%;
+    width: 100%;    
   }
 }
 
@@ -2192,7 +2192,7 @@ $slideshow-indicator-size: 1.25rem;
 .hero {
   // Height is set by JS on slider init. vh is a nice default for modern browsers.
   height: 100vh;
-  max-height: 100vh;
+  max-height: 70vh;
 
   &.slick-slider {
     margin-bottom: 0;
@@ -5610,6 +5610,7 @@ html {
 @media(min-width:0px) and (max-width:590px){
   #featured_content .feature-row .feature-row__item.about_us_image{ width: 220px; margin: auto; }
   #featured_content .feature-row .feature-row__item.about_us_image .feature-row__image-wrapper img { height: 180px; object-fit: cover; margin: 0px 2px 0px;}
+
   .featured-blog__post .article__featured-image-wrapper { padding-top: 0% !important; }
   .featured-blog__post .article__featured-image-wrapper .article__featured-image{ position:relative; }
   .featured-blog__post .blog-info-wrapper{ padding:25px 15px 15px 15px !important; }
@@ -5635,4 +5636,5 @@ html {
 @media(min-width:1024px) and (max-width:1800px){
   .featured-blog__post .article__featured-image-wrapper { padding-top: 0% !important; }
   .featured-blog__post .article__featured-image-wrapper .article__featured-image{ position:relative; }
+  
 }
