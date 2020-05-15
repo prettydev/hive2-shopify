@@ -88,7 +88,7 @@
           "slideshow-0": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Image_top.jpg",
+              "image": "shopify:\/\/shop_images\/Image1_c26f65d5-3edf-4ec5-bc10-9404c07fc99d.jpg",
               "image_position": "center center",
               "image_overlay": true,
               "image_overlay_opacity": 0,
@@ -224,7 +224,7 @@
       "1587875841417": {
         "type": "business-tools-form",
         "settings": {
-          "label_text": "FREE TOOLS GUIDE:"
+          "label_text": "Free Tools Guide:"
         }
       },
       "1587897389589": {
