@@ -88,7 +88,7 @@
           "slideshow-0": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Untitled-1.png",
+              "image": "shopify:\/\/shop_images\/Image_top.jpg",
               "image_position": "center center",
               "image_overlay": true,
               "image_overlay_opacity": 0,
@@ -213,7 +213,7 @@
       "1587815858437": {
         "type": "featured-row",
         "settings": {
-          "image": "shopify:\/\/shop_images\/picture2_1_1.png",
+          "image": "shopify:\/\/shop_images\/333.jpg",
           "layout": "left",
           "title": "Our Values",
           "text": "<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.<\/p>",
