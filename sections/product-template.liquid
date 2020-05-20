@@ -237,9 +237,10 @@
                   {{ form | payment_button }}
                 {% endif %}
               </div>
-            {% endform %}
-
+            {% endform %}          
           </div>
+
+          <div id="smartwishlist" data-product="{{ product.id }}" data-variant="{{ product.variants.first.id }}"></div>
 
           <div class="product-single__description rte" itemprop="description">
             {{ product.description }}
