@@ -112,7 +112,16 @@
                   </li>
                   
                   <li class="item-wishlist">
-                    <a href="{{shop.url}}/a/wishlist"><span class="icon-box"><i class="fal fa-heart"></i></span></a>                    
+                    {% comment %} <a href="{{shop.url}}/a/wishlist">
+                        <i class="fal fa-heart"></i>
+                        <span class="icon-box"></span>
+                    </a> {% endcomment %}
+
+
+                    <a href="{{shop.url}}/a/wishlist" class="site-nav__link">
+                      <span class="icon-box"><i class="fal fa-heart"></i></span>                                           
+                      
+                    </a>                    
                   </li>
                   {% if shop.customer_accounts_enabled %}
                   
